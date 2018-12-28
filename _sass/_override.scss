@@ -5,9 +5,11 @@ nav {
     }
   }
 
-  &.affix  {
-      img {
-          content: url("../img/transparent-logo.png")
-      }
+  @media (min-width: 768px) {
+    &.affix-top  {
+        img {
+            content: url("../img/transparent-white-logo.png")
+        }
+    }
   }
 }
