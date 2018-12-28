@@ -1,0 +1,13 @@
+nav {
+  .navbar-brand {
+    img {
+      height: 100%;
+    }
+  }
+
+  &.affix  {
+      img {
+          content: url("/img/transparent-logo.png")
+      }
+  }
+}
