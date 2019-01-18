@@ -6,6 +6,8 @@ nav {
   }
 
   @media (min-width: 768px) {
+    
+
     &.affix-top  {
         img {
             content: url("../img/transparent-white-logo.png")
@@ -13,6 +15,51 @@ nav {
     }
   }
 }
+
+.navbar-default { 
+  @media (min-width: 768px) {
+    height: 80px;
+    vertical-align: middle;
+    .nav {
+      li {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+    .page-scroll {
+      display: flex;
+      height: 80px;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 18px;
+
+      &.navbar-brand {
+        img {
+          height: 35px;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+header {
+  @media (min-width: 768px) {
+      min-height: 100%;
+      .header-content {
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-40%);
+          -ms-transform: translateY(-40%);
+          transform: translateY(-40%);
+      }
+    }
+  }
+
+
 
 #about {
 
