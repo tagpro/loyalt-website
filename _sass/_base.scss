@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    @include serif-font;
+    @include sans-serif-font;
 }
 
 hr {
@@ -40,6 +40,12 @@ p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 18px;
+    }
 }
 
 .bg-primary {
