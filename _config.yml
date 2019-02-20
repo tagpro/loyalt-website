@@ -10,3 +10,7 @@ facebook_username: TheLoyalTApp
 
 # Build settings
 markdown: kramdown
+
+
+sass:
+  style: compressed
