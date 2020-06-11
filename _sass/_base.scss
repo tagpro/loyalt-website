@@ -160,8 +160,10 @@ header {
     width: 100%;
     min-height: auto;
     @include background-cover;
-    background-position: center;
-    background-image: url('../img/header.jpg');
+    // background-position: center;
+    // background-image: url('https://images.pexels.com/photos/3800536/pexels-photo-3800536.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0, rgba(92, 77, 66, 0.8) 100%),
+    url(../img/pexels-photo-3800536.jpeg);
     text-align: center;
     color: white;
     .header-content {
