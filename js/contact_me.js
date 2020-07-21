@@ -77,7 +77,7 @@
 
 
   $("#contactForm").submit(function(event) {
-
+    $(this).find('input[type="submit"]').attr('disabled','disabled');
     /* stop form from submitting normally */
     event.preventDefault();
   
@@ -105,6 +105,8 @@
         .append('</div>');
       //clear all fields
       $('#contactForm').trigger("reset");
+      setTimeout(function(){$( "#sendMessageButton" ).removeAttr('disabled');},5000);
+
     });
     posting.fail(function() {
       $('#success').html("<div class='alert alert-danger'>");
@@ -112,6 +114,8 @@
         .append("</button>");
       $('#success > .alert-danger').append($("<strong> Sorry " + $('#name').val() + ", it seems that my mail server is not responding. Please try again later!  </strong>"));
       $('#success > .alert-danger').append('</div>');
+      setTimeout(function(){$( "#sendMessageButton" ).removeAttr('disabled');},5000);
+
       //clear all fields
     });
   });
