@@ -81,7 +81,7 @@
     /* stop form from submitting normally */
     event.preventDefault();
   
-    var url = "http://localhost:8000/core/customer/contact-us/";
+    var url = "https://api.ellipso.com.au/core/customer/contact-us/";
   
     /* Send the data using post with element id name and name2*/
     var posting = $.post(url, {
